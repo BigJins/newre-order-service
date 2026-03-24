@@ -1,0 +1,66 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Kotlin ###
+.kotlin
+
+### env ###
+.env
+.env.*
+
+### spring local###
+**/application-local.yaml
+
+### Claude Code ###
+.claude/memory/
+.claude/settings.local.json
+
+### Infra / local dev only ###
+compose.yaml
+compose*.yaml
+docker-compose*.yaml
+debezium/
+mysql-init/
+
+### Sensitive / credentials ###
+**/application-secret*.yaml
+**/application-prod*.yaml
+*.p12
+*.jks
+*.key
+*.pem

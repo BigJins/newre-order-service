@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:order_test;MODE=MySQL;NON_KEYWORDS=VALUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  sql:
+    init:
+      mode: always
+
+  flyway:
+    enabled: false
+
+  docker:
+    compose:
+      lifecycle-management: none
+
+  data:
+    redis:
+      host: localhost
+      port: 16379  # 실제 연결 없음 — StringRedisTemplate은 @MockkBean으로 대체
+
+management:
+  health:
+    redis:
+      enabled: false
+    kafka:
+      enabled: false
